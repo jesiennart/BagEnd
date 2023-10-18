@@ -1,0 +1,574 @@
+.underlined {
+  /*   background: red; */
+  position: relative;
+}
+
+.underline-overflow {
+  display: inline-block;
+  /* A little extra padding and overflow hidden   */
+  overflow: hidden;
+  padding-bottom: clamp(1rem, 2vmin, 2rem);
+}
+
+.underline-clip:after {
+  content: "";
+  position: absolute;
+  top: 95%;
+  width: 150%;
+  aspect-ratio: 3/1;
+  left: 50%;
+  transform: translate(-50%, 0);
+  border-radius: 50%;
+  border: 6px solid wheat;
+  /* Use a clip-path to hide and show the bits you want */
+  -webkit-clip-path: polygon(0 0, 50% 50%, 100% 0);
+          clip-path: polygon(0 0, 50% 50%, 100% 0);
+}
+
+.underline-clip3:after {
+  content: "";
+  position: absolute;
+  top: 95%;
+  width: 150%;
+  aspect-ratio: 3/1;
+  left: 50%;
+  transform: translate(-50%, 0);
+  border-radius: 50%;
+  border: 6px solid rgb(195, 30, 1);
+  /* Use a clip-path to hide and show the bits you want */
+  -webkit-clip-path: polygon(0 0, 50% 50%, 100% 0);
+          clip-path: polygon(0 0, 50% 50%, 100% 0);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-padding-top: 100px;
+}
+
+body {
+  position: relative;
+  background: whitesmoke;
+  font-family: "Lato", monospace;
+}
+
+h1 {
+  font-size: 8rem;
+  font-weight: bold;
+  color: whitesmoke;
+}
+
+h2 {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.container {
+  padding: 0;
+}
+
+.shadow-bg {
+  background-color: black;
+}
+
+nav {
+  z-index: 1;
+}
+
+.navbar {
+  background-color: #333;
+}
+.navbar .nav-logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #333;
+  border-radius: 0 0 5% 5%;
+}
+.navbar .nav-logo .navbar-br {
+  padding-top: 6rem;
+  text-align: center;
+  font-size: 3.5rem;
+  font-family: "Climate Crisis", monospace;
+  color: whitesmoke;
+  transition: 0.7s;
+}
+.navbar .nav-logo .navbar-br:hover {
+  color: rgb(195, 30, 1);
+}
+.navbar .nav-logo .navbar-des p {
+  font-size: 2rem;
+  padding: 0 1rem;
+  font-family: "Climate Crisis", monospace;
+  color: whitesmoke;
+  transition: 0.7s;
+}
+.navbar .nav-logo .navbar-des:hover {
+  color: rgb(195, 30, 1);
+}
+.navbar .navbar-toggler {
+  font-size: 32px;
+  left: 90%;
+  top: 10px;
+  color: whitesmoke;
+  transition: 0.7s;
+  z-index: 15;
+}
+.navbar .navbar-toggler:hover {
+  margin-left: 1rem;
+  color: rgb(195, 30, 1);
+}
+.navbar a {
+  text-decoration: none;
+}
+
+.navbar-nav {
+  position: relative;
+  font-size: 2rem;
+  font-weight: bold;
+  transition: 0.7s;
+}
+.navbar-nav .nav-link {
+  margin-left: 1rem;
+  color: whitesmoke;
+  transition: 0.7s;
+}
+.navbar-nav .active {
+  color: rgb(195, 30, 1);
+  font-weight: bold;
+  font-size: 2rem;
+}
+.navbar-nav .nav-link:hover {
+  color: rgb(195, 30, 1);
+}
+.navbar-nav .fa-brands {
+  font-size: 3rem;
+  cursor: pointer;
+}
+.navbar-nav .fa-phone-volume {
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+.navbar-nav .fa-at {
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+
+.home-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url("../img/main-photo.jpg");
+  background-size: cover;
+  background-position: center;
+  z-index: 10;
+}
+.home-img .home-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5rem;
+  padding: 1rem;
+  background-color: #333;
+  border: 1px solid wheat;
+  box-shadow: 0rem 0rem 1.5rem wheat;
+}
+.home-img .home-text p {
+  padding: 1rem;
+  font-size: 4rem;
+  font-weight: bold;
+  line-height: 2rem;
+  color: whitesmoke;
+}
+.home-img .home-text a {
+  margin-top: 1.7rem;
+  font-size: 2rem;
+  font-weight: bold;
+  color: whitesmoke;
+  border: 3px solid whitesmoke;
+  border-radius: 5rem;
+  background-color: none;
+  transition: all 0.7s;
+}
+.home-img .home-text a:hover {
+  color: rgb(195, 30, 1);
+  border: 3px solid rgb(195, 30, 1);
+}
+.home-img .fa-solid {
+  padding: 3rem;
+  font-size: 3rem;
+  color: whitesmoke;
+  transition: 0.7s;
+}
+.home-img .fa-solid:hover {
+  color: rgb(195, 30, 1);
+}
+
+.about-me {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about-me .name .about-name {
+  text-align: center;
+  font-size: 5rem;
+  padding: 0 1rem;
+  font-weight: bold;
+}
+.about-me .name .about-text {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 2rem;
+  padding: 1rem;
+}
+.about-me .about-photo img {
+  width: 100%;
+  height: 100%;
+  border-right: 10px solid wheat;
+  border-left: 10px solid wheat;
+  border-radius: 50% 0;
+  margin: 0;
+  transition: all 0.7s;
+}
+.about-me .about-photo img:hover {
+  border-bottom: 10px solid wheat;
+  border-top: 10px solid wheat;
+  scale: 1.1;
+}
+.about-me .about-photo .photo {
+  -o-object-fit: none;
+     object-fit: none;
+}
+
+.row i {
+  font-size: 4rem;
+  filter: drop-shadow(0px 0px 7px rgb(71, 71, 71));
+  color: whitesmoke;
+}
+.row .about-us-card-title {
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: rgb(195, 30, 1);
+}
+.row .about-us-card-text {
+  font-size: 1.5rem;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+
+.card {
+  width: 28rem;
+  height: 36rem;
+  border-radius: 10px;
+  margin: 2rem auto;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  color: black;
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.3);
+}
+.card .team-shadow {
+  z-index: -5;
+}
+.card img {
+  position: absolute;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transition: opacity 0.2s ease-out;
+}
+.card h3 {
+  position: absolute;
+  inset: auto auto 30px 10px;
+  margin: 0;
+  transition: inset 0.3s 0.3s ease-out;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: bolder;
+  background-color: wheat;
+  border-radius: 10px;
+  padding: 0.5rem;
+  text-transform: uppercase;
+}
+.card p {
+  position: absolute;
+  padding: 1rem;
+  opacity: 0;
+  max-width: 80%;
+  font-size: 1.7rem;
+  transition: opacity 0.3s ease-out;
+  border-radius: 0px 10px 10px 0px;
+  background-color: wheat;
+}
+.card p {
+  inset: auto auto 10px 0px;
+}
+.card:hover h3 {
+  inset: auto auto 220px 110px;
+  border-radius: 10px;
+  transition: inset 0.3s ease-out;
+}
+.card:hover p {
+  opacity: 1;
+  transition: all 0.5s 0.1s ease-in;
+}
+.card:hover img {
+  transition: opacity 0.3s ease-in;
+  opacity: 1;
+}
+
+.material-symbols-outlined {
+  vertical-align: middle;
+}
+
+.contact .icon-part {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: start;
+  flex-wrap: wrap;
+  margin-top: 3rem;
+}
+.contact .part-one {
+  font-size: 7rem;
+  text-align: center;
+  color: rgb(195, 30, 1);
+}
+.contact .content p {
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: bold;
+}
+.contact h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+.contact .form {
+  width: 90%;
+  height: 100%;
+  background-color: #fff;
+  margin: 2rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact .form-text {
+  width: 100%;
+  height: 100%;
+  font-weight: bold;
+}
+.contact .form-text .head-text p {
+  font-size: 3rem;
+  text-align: left;
+  text-transform: uppercase;
+  margin: 1rem;
+}
+.contact .form-text fieldset {
+  text-align: left;
+  margin: 2rem;
+}
+.contact .form-text p {
+  margin: 1rem;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+.contact .form-text input, .contact .form-text textarea {
+  width: 100%;
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: groove;
+}
+.contact .form-text textarea {
+  margin-top: 1rem;
+}
+.contact .form-text .no-outline:focus {
+  outline: none;
+}
+.contact .form-text .messege {
+  padding: 1rem 2rem;
+  margin: 1rem;
+  border-radius: 1rem;
+  font-weight: bold;
+  border: none;
+  background-color: rgb(195, 30, 1);
+  color: whitesmoke;
+}
+.contact .form-photo {
+  width: 60vw;
+  height: 450px;
+  background-image: url("../img/teacher.jpg");
+  background-size: cover;
+  background-position: left;
+}
+
+.footer {
+  color: black;
+  text-align: center;
+  font-size: 1.5rem;
+}
+.footer hr {
+  color: black;
+}
+.footer .f {
+  transition: 0.7s;
+}
+
+.footer:hover > .f {
+  color: rgb(195, 30, 1);
+}
+
+@media (min-width: 375px) {
+  h1 {
+    text-align: center;
+    font-size: 4rem;
+  }
+  .nav-logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    border-radius: 0 0 5% 5%;
+  }
+  .nav-logo .navbar-br p {
+    padding-top: 2rem;
+    text-align: center;
+    font-size: 3rem;
+    font-family: "Climate Crisis", monospace;
+    color: whitesmoke;
+    transition: 0.7s;
+  }
+  .nav-logo .navbar-br:hover p {
+    color: rgb(250, 41, 4);
+  }
+  .nav-logo .navbar-des p {
+    font-size: 1.4rem;
+    padding: 0 1rem;
+    text-align: center;
+    font-family: "Climate Crisis", monospace;
+    color: whitesmoke;
+    transition: 0.7s;
+  }
+  .nav-logo .navbar-des:hover p {
+    color: rgb(250, 41, 4);
+  }
+  .home-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    border: 2px solid red;
+    background-image: url("../img/main-photo.jpg");
+    background-size: cover;
+    background-position: center;
+    z-index: 10;
+  }
+  .home-img .home-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5rem;
+    padding: 1rem;
+    background-color: #333;
+    border: 1px solid wheat;
+    box-shadow: 0rem 0rem 1.5rem wheat;
+  }
+  .home-img .home-text p {
+    padding: 1rem;
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 2rem;
+    color: whitesmoke;
+  }
+  .home-img .home-text a {
+    margin-top: 1.7rem;
+    font-size: 2rem;
+    font-weight: bold;
+    color: whitesmoke;
+    border: 3px solid whitesmoke;
+    border-radius: 5rem;
+    background-color: none;
+    transition: all 0.7s;
+  }
+  .home-img .home-text a:hover {
+    color: rgb(250, 41, 4);
+    border: 3px solid rgb(250, 41, 4);
+  }
+  .home-img .fa-solid {
+    padding: 3rem;
+    font-size: 3rem;
+    color: whitesmoke;
+    transition: 0.7s;
+  }
+  .home-img .fa-solid:hover {
+    color: rgb(250, 41, 4);
+  }
+}
+@media (min-width: 768px) {
+  h1 {
+    font-size: 8rem;
+    font-weight: bold;
+    color: whitesmoke;
+  }
+  .home-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    border: 2px solid red;
+    background-image: url("../img/main-photo.jpg");
+    background-size: cover;
+    background-position: center;
+    z-index: 10;
+  }
+  .home-img .home-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5rem;
+    padding: 1rem;
+    background-color: #333;
+    border: 1px solid wheat;
+    box-shadow: 0rem 0rem 1.5rem wheat;
+  }
+  .home-img .home-text p {
+    padding: 1rem;
+    font-size: 4rem;
+    font-weight: bold;
+    line-height: 2rem;
+    color: whitesmoke;
+  }
+}/*# sourceMappingURL=style.css.map */
