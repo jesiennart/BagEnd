@@ -444,6 +444,33 @@ main {
   color: rgb(195, 30, 1);
 }
 
+@media (max-width: 375px) {
+  .nav-logo p {
+    font-size: 2rem;
+  }
+  .navbar-des p {
+    font-size: 2rem;
+  }
+  h1 {
+    text-align: center;
+    font-size: 5rem;
+  }
+  .navbar-des p {
+    text-align: center;
+  }
+  .home-text {
+    width: 90%;
+  }
+  .home-img .home-text p {
+    font-size: 2.7rem;
+    font-weight: bold;
+    line-height: 3rem;
+    color: whitesmoke;
+  }
+   div.card {
+      width: 25rem;
+    }
+}
 @media (min-width: 375px) {
   h1 {
     text-align: center;
