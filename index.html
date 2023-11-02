@@ -1,377 +1,442 @@
 <!DOCTYPE html>
 <html lang="pl">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Climate+Crisis&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/d7108e48b2.js"
+      crossorigin="anonymous"
+    ></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Bag End - English School</title>
+  </head>
 
-		<link
-			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
-			rel="stylesheet"
-			integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
-			crossorigin="anonymous" />
+  <body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="80">
+    <nav id="navbar" class="navbar navbar-expand-lg position-fixed w-100">
+      <div class="container">
+        <div class="nav-logo">
+          <a href="#home">
+            <div class="navbar-br">
+              <p>Bag End</p>
+            </div>
+            <div class="navbar-des">
+              <p>English School</p>
+            </div>
+          </a>
+        </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ms-left">
+            <a class="nav-link tabs active" href="#home">Home</a>
+            <a class="nav-link tabs" href="#about">O mnie</a>
+            <a class="nav-link tabs" href="#skills">Doświadczenie</a>
+            <a class="nav-link tabs" href="#learning">Nauczanie</a>
+            <a class="nav-link tabs" href="#contact">Kontakt</a>
+          </div>
+          <div class="navbar-nav ms-auto">
+            <a class="nav-link tabs"
+              ><i class="fa-solid fa-phone-volume"></i
+            ></a>
+            <a class="nav-link tabs"><i class="fa-brands fa-facebook"></i></a>
+            <a class="nav-link tabs"><i class="fa-brands fa-instagram"></i></a>
+            <a class="nav-link tabs"><i class="fa-solid fa-at"></i></a>
+          </div>
+        </div>
+      </div>
+    </nav>
 
-		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <header id="home">
+      <div class="home-img">
+        <div class="dots-6"></div>
+        <div class="home-shadow"></div>
+        <div class="home-text">
+          <h1>
+            Dołącz do <span class="underlined underline-clip3">nas!</span>
+          </h1>
+          <p>
+            Uczymy łatwo,
+            <span class="underlined underline-clip">szybko</span> i skutecznie :
+            )
+          </p>
+          <a href="#about" class="btn">Zapraszamy</a>
+        </div>
+        <a href="#about"
+          ><i class="fa-sharp fa-solid fa-chevron-down bounce-top"></i
+        ></a>
+      </div>
+    </header>
 
-		<link
-			href="https://fonts.googleapis.com/css2?family=Climate+Crisis&display=swap"
-			rel="stylesheet" />
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap"
-			rel="stylesheet" />
+    <section>
+      <div id="about" class="about py-5">
+        <div class="container">
+          <h2>O mnie</h2>
+          <div class="about-me row row-cols-1 row-cols-md-2 py-5">
+            <div class="name">
+              <p class="about-name">Monika Molenda</p>
+              <hr />
+              <div class="about-text">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Ducimus itaque dignissimos voluptate molestias deserunt quasi
+                  iste eaque animi ullam voluptas. Dicta a ratione commodi
+                  possimus delectus ad dignissimos enim dolor soluta labore quae
+                  illum ducimus quibusdam qui, reiciendis ab provident optio est
+                  praesentium rem modi neque corrupti ipsam? Voluptate, ipsum?
+                </p>
+              </div>
+            </div>
+            <div class="about-photo">
+              <img class="photo" src="./img/teacher2.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-		<script
-			src="https://kit.fontawesome.com/d7108e48b2.js"
-			crossorigin="anonymous"></script>
+    <section>
+      <div id="skills" class="skills py-5">
+        <div class="container">
+          <div class="learning-0 py-5">
+            <h2>Co nas wyróżnia</h2>
+          </div>
+          <div class="row py-5">
+            <div
+              class="col-sm-6 col-md-4 text-center aboutus-hover"
+              data-aos="zoom-in"
+              data-aos-delay="200"
+            >
+              <p><i class="fa-solid fa-chart-column"></i></p>
+              <p class="about-us-card-title mb-1">Zróżnicowanie</p>
+              <p class="about-us-card-text">
+                Uczymy na każdym poziomie zaawansowania
+              </p>
+            </div>
+            <div
+              class="col-sm-6 col-md-4 text-center aboutus-hover"
+              data-aos="zoom-in"
+              data-aos-delay="300"
+            >
+              <p><i class="fa-solid fa-clock"></i></p>
+              <p class="about-us-card-title mb-1">Elastyczność</p>
+              <p class="about-us-card-text">
+                Ty ustalasz kiedy i ile chcesz się uczyć
+              </p>
+            </div>
+            <div
+              class="col-sm-6 col-md-4 text-center aboutus-hover"
+              data-aos="zoom-in"
+              data-aos-delay="400"
+            >
+              <p><i class="fa-solid fa-user-graduate"></i></p>
+              <p class="about-us-card-title mb-1">Maturzyści</p>
+              <p class="about-us-card-text">
+                przygotowywujemy do egzaminu maturalnego
+              </p>
+            </div>
+            <div
+              class="col-sm-6 col-md-4 text-center aboutus-hover"
+              data-aos="zoom-in"
+              data-aos-delay="500"
+            >
+              <p><i class="fa-solid fa-user"></i></p>
+              <p class="about-us-card-title mb-1">Praca z dorosłymi</p>
+              <p class="about-us-card-text">
+                uczymy do pracy zawodowej jak i hobby
+              </p>
+            </div>
+            <div
+              class="col-sm-6 col-md-4 text-center aboutus-hover"
+              data-aos="zoom-in"
+              data-aos-delay="600"
+            >
+              <p><i class="fa-solid fa-children"></i></p>
+              <p class="about-us-card-title mb-1">praca z dziećmi</p>
+              <p class="about-us-card-text">
+                mamy specjalnie dostosowany program do najmłodszych kursantów
+              </p>
+            </div>
+            <div
+              class="col-sm-6 col-md-4 text-center aboutus-hover"
+              data-aos="zoom-in"
+              data-aos-delay="700"
+            >
+              <p><i class="fa-sharp fa-solid fa-heart"></i></p>
+              <p class="about-us-card-title mb-1">Przyjazna atmosfera</p>
+              <p class="about-us-card-text">Uczymy na luzie</p>
+            </div>
+            <div
+              class="col-sm-6 col-md-4 text-center aboutus-hover"
+              data-aos="zoom-in"
+              data-aos-delay="800"
+            >
+              <p><i class="fa-solid fa-mug-saucer"></i></p>
+              <p class="about-us-card-title mb-1">Lubimy pyszną kawę</p>
+              <p class="about-us-card-text">
+                Na każdego kursanat czeka pyszna kawa
+              </p>
+            </div>
+            <div
+              class="col-sm-6 col-md-4 text-center aboutus-hover"
+              data-aos="zoom-in"
+              data-aos-delay="900"
+            >
+              <p><i class="fa-solid fa-cat"></i></p>
+              <p class="about-us-card-title mb-1">Kochamy koty</p>
+              <p class="about-us-card-text">
+                Naukę umili wam od czasu do czasu piękny futrzak
+              </p>
+            </div>
+            <div
+              class="col-sm-6 col-md-4 text-center aboutus-hover"
+              data-aos="zoom-in"
+              data-aos-delay="1000"
+            >
+              <p><i class="fa-solid fa-users"></i></p>
+              <p class="about-us-card-title mb-1">Jesteśmy gadułami</p>
+              <p class="about-us-card-text">
+                Chcesz konwersacji na luźne tematy - jesteśmy gotowi!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <section>
+      <div id="learning" class="learning py-5">
+        <div class="container">
+          <div class="learning-0">
+            <h2>Nauczanie</h2>
+          </div>
+          <main class="row row-cols-1 row-cols-md-2 row-cols-xl-4">
+            <div class="card-one">
+              <div class="card">
+                <img src="./img/class.jpg" alt="" />
+                <div class="text">
+                  <h3>W klasie</h3>
+                  <p>
+                    Dla naszych studentów, mamy przygotowaną nowoczesną salę, w
+                    której nauka upłynie Wam w miłych i komfortowych warunkach.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="card-two">
+              <div class="card">
+                <img src="./img/home.jpg" alt="" />
+                <div class="text">
+                  <h3>Online</h3>
+                  <p>
+                    Dla wszystkich osób, które pragną uczyć się we własnym domu
+                    proponujemy kursy online z naszymi lektorami.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="card-thre">
+              <div class="card">
+                <img src="./img/man.jpg" alt="" />
+                <div class="text">
+                  <h3>Indywidualnie</h3>
+                  <p>
+                    Prowadzimy zajęcia indywidualne, w których dostosowujemy
+                    program i tempo nauczania do Twoich potrzeb.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="card-four">
+              <div class="card">
+                <img src="./img/group.jpg" alt="" />
+                <div class="text">
+                  <h3>W grupach</h3>
+                  <p>
+                    Jeżeli chciałbyś uczęszczać na nasze kursy z rodzeństwem lub
+                    ze znajomymi, zapraszamy na lekcje grupowe.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </main>
+        </div>
+      </div>
+    </section>
 
-		<link rel="stylesheet" href="./css/style.css" />
-		<title>Bag End - English School</title>
-	</head>
-
-	<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="80">
-		<nav 
-			id="navbar" class="navbar navbar-expand-lg position-fixed w-100">
-			<div class="container">
-				<div class="nav-logo">
-					<a href="#home">
-							<div class="navbar-br">
-								<p>Bag End</p>
-							</div>
-							<div class="navbar-des">
-								<p>English School</p>
-							</div>
-					</a>
-				</div>
-				<button
-					class="navbar-toggler"
-					type="button"
-					data-bs-toggle="collapse"
-					data-bs-target="#navbarNavAltMarkup"
-					aria-controls="navbarNavAltMarkup"
-					aria-expanded="false"
-					aria-label="Toggle navigation">
-					<i class="fa-solid fa-bars"></i>
-				</button>
-				<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-					<div class="navbar-nav ms-left">
-						<a class="nav-link tabs active" href="#home">Home</a>
-						<a class="nav-link tabs" href="#about">O mnie</a>
-						<a class="nav-link tabs" href="#skills">Doświadczenie</a>
-						<a class="nav-link tabs" href="#learning">Nauczanie</a>
-						<a class="nav-link tabs" href="#contact">Kontakt</a>
-					</div>
-					<div class="navbar-nav ms-auto">
-						<a class="nav-link tabs"><i class="fa-solid fa-phone-volume"></i></a>
-						<a class="nav-link tabs"><i class="fa-brands fa-facebook"></i></a>
-						<a class="nav-link tabs"><i class="fa-brands fa-instagram"></i></a>
-						<a class="nav-link tabs"><i class="fa-solid fa-at"></i></a>
-					</div>
-					
-				</div>
-			</div>
-		</nav>
-
-		<header id="home">
-			<div class="home-img">
-				<div class="dots-6"></div>
-				<div class="home-shadow"></div>
-				<div class="home-text">
-					<h1>Dołącz do <span class="underlined underline-clip3">nas!</span></h1>
-					<p>Uczymy łatwo, <span class="underlined underline-clip">szybko</span> i skutecznie : )</p>
-					<a href="#about" class="btn">Zapraszamy</a>
-				</div>
-				<a href="#about"
-					><i class="fa-sharp fa-solid fa-chevron-down bounce-top"></i
-				></a>
-			</div>
-		</header>
-
-		<section>
-			<div id="about" class="about py-5">
-				<div class="container">
-						<h2>O mnie</h2>
-						<div class="about-me row row-cols-1 row-cols-md-2 py-5">
-
-							<div class="name">
-								<p class="about-name">Monika Molenda</p>
-								<hr>
-								<div class="about-text">
-								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus itaque dignissimos voluptate molestias deserunt quasi iste eaque animi ullam voluptas. Dicta a ratione commodi possimus delectus ad dignissimos enim dolor soluta labore quae illum ducimus quibusdam qui, reiciendis ab provident optio est praesentium rem modi neque corrupti ipsam? Voluptate, ipsum?</p>
-							</div>
-							</div>
-							
-
-							<div class="about-photo">
-								<img class="photo" src="./img/teacher2.jpg" alt="">
-							</div>
-
-						</div>
-					</div>	
-				</div>
-			</div>
-		</section>
-
-		<section>
-			<div id="skills" class="skills py-5">
-				<div class="container">
-					<div class="learning-0 py-5">
-						<h2>Co nas wyróżnia</h2>
-					</div>
-					<div class="row py-5">
-						<div class="col-sm-6 col-md-4 text-center aboutus-hover" data-aos="zoom-in" data-aos-delay="200">
-							<p><i class="fa-solid fa-chart-column"></i></p>
-							<p class="about-us-card-title mb-1">Zróżnicowanie</p>
-							<p class="about-us-card-text">Uczymy na każdym poziomie zaawansowania</p>
-						</div>
-						<div class="col-sm-6 col-md-4 text-center aboutus-hover" data-aos="zoom-in" data-aos-delay="300">
-							<p><i class="fa-solid fa-clock"></i></p>
-							<p class="about-us-card-title mb-1">Elastyczność</p>
-							<p class="about-us-card-text">Ty ustalasz kiedy i ile chcesz się uczyć</p>
-						</div>
-						<div class="col-sm-6 col-md-4 text-center aboutus-hover" data-aos="zoom-in" data-aos-delay="400">
-							<p><i class="fa-solid fa-user-graduate"></i></p>
-							<p class="about-us-card-title mb-1">Maturzyści</p>
-							<p class="about-us-card-text">przygotowywujemy do egzaminu maturalnego</p>
-						</div>
-						<div class="col-sm-6 col-md-4 text-center aboutus-hover" data-aos="zoom-in" data-aos-delay="500">
-							<p><i class="fa-solid fa-user"></i></p>
-							<p class="about-us-card-title mb-1">Praca z dorosłymi</p>
-							<p class="about-us-card-text">uczymy do pracy zawodowej jak i hobby</p>
-						</div>
-						<div class="col-sm-6 col-md-4 text-center aboutus-hover" data-aos="zoom-in" data-aos-delay="600">
-							<p><i class="fa-solid fa-children"></i></p>
-							<p class="about-us-card-title mb-1">praca z dziećmi</p>
-							<p class="about-us-card-text">mamy specjalnie dostosowany program do najmłodszych kursantów</p>
-						</div>
-						<div class="col-sm-6 col-md-4 text-center aboutus-hover" data-aos="zoom-in" data-aos-delay="700">
-							<p><i class="fa-sharp fa-solid fa-heart"></i></p>
-							<p class="about-us-card-title mb-1">Przyjazna atmosfera</p>
-							<p class="about-us-card-text">Uczymy na luzie</p>
-						</div>
-						<div class="col-sm-6 col-md-4 text-center aboutus-hover" data-aos="zoom-in" data-aos-delay="800">
-							<p><i class="fa-solid fa-mug-saucer"></i></p>
-							<p class="about-us-card-title mb-1">Lubimy pyszną kawę</p>
-							<p class="about-us-card-text">Na każdego kursanat czeka pyszna kawa</p>
-						</div>
-						<div class="col-sm-6 col-md-4 text-center aboutus-hover" data-aos="zoom-in" data-aos-delay="900">
-							<p><i class="fa-solid fa-cat"></i></p>
-							<p class="about-us-card-title mb-1">Kochamy koty</p>
-							<p class="about-us-card-text">Naukę umili wam od czasu do czasu piękny futrzak </p>
-						</div>
-						<div class="col-sm-6 col-md-4 text-center aboutus-hover" data-aos="zoom-in" data-aos-delay="1000">
-							<p><i class="fa-solid fa-users"></i></p>
-							<p class="about-us-card-title mb-1">Jesteśmy gadułami</p>
-							<p class="about-us-card-text">Chcesz konwersacji na luźne tematy - jesteśmy gotowi!</p>
-						</div>
-						
-					</div>	
-				</div>
-			</div>
-		</section>
-
-		<section>
-			<div id="learning" class="learning py-5">
-				<div class="container">
-					<div class="learning-0">
-						<h2>Nauczanie</h2>
-					</div>
-
-					<main class="row row-cols-1 row-cols-md-2 row-cols-xl-4">
-
-						<div class="card-one">
-							<div class="card">
-							  <img src="./img/class.jpg" alt="">
-							  <div class="text">
-								<h3>
-								  W klasie
-								</h3>
-								<p>
-								  Dla naszych studentów, mamy przygotowaną nowoczesną salę, w której nauka upłynie Wam w miłych i komfortowych warunkach.
-								</p>
-							  </div>
-							</div>
-						</div>
-						<div class="card-two">
-							<div class="card">
-							  <img src="./img/home.jpg" alt="">
-							  <div class="text">
-								<h3>
-								  Online
-								</h3>
-								<p>
-								  Dla wszystkich osób, które pragną uczyć się we własnym domu proponujemy kursy online z naszymi lektorami.
-								</p>
-							  </div>
-							</div>
-						</div>
-						<div class="card-thre">
-							<div class="card">
-							  <img src="./img/man.jpg" alt="">
-							  <div class="text">
-								<h3>
-								  Indywidualne
-								</h3>
-								<p>
-								  Prowadzimy zajęcia indywidualne, w których dostosowujemy program i tempo nauczania do Twoich potrzeb.
-								</p>
-							  </div>
-							</div>
-						</div>
-						<div class="card-four">
-							<div class="card">
-							  <img src="./img/group.jpg" alt="">
-							  <div class="text">
-								<h3>
-								  W grupach
-								</h3>
-								<p>
-								  Jeżeli chciałbyś uczęszczać na nasze kursy z rodzeństwem lub ze znajomymi, zapraszamy na lekcje grupowe.
-								</p>
-							  </div>
-							</div>
-						</div>
-
-
-
-					  </main>
-
-				</div>
-			</div>
-		</section>
-
-
-		<section>
-			<div id="contact" class="contact  py-5">
-				<div class="container">
-					<div class="contact-0">
-						<h2 class="logo-contact">kontakt:</h2>
-					</div>
-
-					<div class="icon-part row row-cols-1 row-cols-md-2 row-cols-xl-4">
-						
-						<div class="icon-one">
-							<div class="part-one">
-								<div class="icon">
-									<i class="fa-solid fa-address-book"></i>
-								</div>
-							</div>
-							<div class="part-two">
-								<div class="content">
-									<h3>Monika Molenda</h3>
-									<p>ul. pokoju 74a/4</p>
-									<p>71-740 szczecin</p>
-								</div>
-							</div>
-						</div>
-						<div class="icon-one">
-							<div class="part-one">
-								<div class="icon">
-									<i class="fa-solid fa-square-phone"></i>
-								</div>
-							</div>
-							<div class="part-two">
-								<div class="content">
-									<h3>Telefon:</h3>
-									<p>243 745 937</p>
-								</div>
-							</div>
-						</div>
-						<div class="icon-one">
-							<div class="part-one">
-								<div class="icon">
-									<i class="fa-solid fa-envelope"></i>
-								</div>
-							</div>
-							<div class="part-two">
-								<div class="content">
-									<h3>Email:</h3>
-									<p>henoh@poczta.onet.pl</p>
-								</div>
-							</div>
-						</div>
-						<div class="icon-one">
-							<div class="part-one">
-								<div class="icon">
-									<i class="fa-brands fa-square-facebook"></i>
-								</div>
-							</div>
-							<div class="part-two">
-								<div class="content">
-									<h3>Facebook:</h3>
-									<p>facebook/monikamolenda</p>
-								</div>
-							</div>
-						</div>
-
-					</div>
-					<div class="form">
-						<div class="form-text">
-							<div class="head-text">
-								<p>Napisz do nas:</p>
-							</div>
-							<fieldset>
-								<p>Imię i Nazwisko:<br>
-									<input minlength="5" maxlength="30" type=" text" name="user name" id="username" required required placeholder="imię i nazwisko">
-								</p>
-								</p>
-								<p>Email:<br>
-									<input type="email" name="email" id="email" required placeholder="email">
-								<p>
-								</p>
-								<p>Temat<br>
-									<input type="text" name="subject" id="subject" required placeholder="temat">
-								<p>
-								</p>
-								<p>Wiadomość:<br>
-									<textarea name="comment" form="usrform">treść wiadomości</textarea>
-								<p>
-									<button class="messege">Wyślij</button>
-							</fieldset>
-
-						</div>
-						<div class="form-photo">
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-	</main>
-	<footer class="p-4">
-		<div class="container-fluid">
-			<div class="footer">
-				<hr class="f">
-				<p class="f mb-0">&copy; 2023 | Artur Molenda</p>
-			</div>
-		</div>
-	</footer>
-
-
-		<script
-			src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-			integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
-			crossorigin="anonymous"></script>
-		<script
-			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
-			integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
-			crossorigin="anonymous"></script>
-		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-		<script>
-			AOS.init({
-				startEvent: 'DOMContentLoaded',
-				offset: 200,
-				once: true,
-			});
-		</script>
-		<script src="./script.js"></script>
-	</body>
+    <section>
+      <div id="contact" class="contact py-5">
+        <div class="container">
+          <div class="contact-0">
+            <h2 class="logo-contact">kontakt:</h2>
+          </div>
+          <div class="icon-part row row-cols-1 row-cols-md-2 row-cols-xl-4">
+            <div class="icon-one">
+              <div class="part-one">
+                <div class="icon">
+                  <i class="fa-solid fa-address-book"></i>
+                </div>
+              </div>
+              <div class="part-two">
+                <div class="content">
+                  <h3>Monika Molenda</h3>
+                  <p>ul. pokoju 74a/4</p>
+                  <p>71-740 szczecin</p>
+                </div>
+              </div>
+            </div>
+            <div class="icon-one">
+              <div class="part-one">
+                <div class="icon">
+                  <i class="fa-solid fa-square-phone"></i>
+                </div>
+              </div>
+              <div class="part-two">
+                <div class="content">
+                  <h3>Telefon:</h3>
+                  <p>243 745 937</p>
+                </div>
+              </div>
+            </div>
+            <div class="icon-one">
+              <div class="part-one">
+                <div class="icon">
+                  <i class="fa-solid fa-envelope"></i>
+                </div>
+              </div>
+              <div class="part-two">
+                <div class="content">
+                  <h3>Email:</h3>
+                  <p>henoh@poczta.onet.pl</p>
+                </div>
+              </div>
+            </div>
+            <div class="icon-one">
+              <div class="part-one">
+                <div class="icon">
+                  <i class="fa-brands fa-square-facebook"></i>
+                </div>
+              </div>
+              <div class="part-two">
+                <div class="content">
+                  <h3>Facebook:</h3>
+                  <p>facebook/monikamolenda</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="form">
+            <div class="form-text">
+              <div class="head-text">
+                <p>Napisz do nas:</p>
+              </div>
+              <fieldset>
+                <p>
+                  Imię i Nazwisko:<br />
+                  <input
+                    minlength="5"
+                    maxlength="30"
+                    type=" text"
+                    name="user name"
+                    id="username"
+                    required
+                    required
+                    placeholder="imię i nazwisko"
+                  />
+                </p>
+                <p>
+                  Email:<br />
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    required
+                    placeholder="email"
+                  />
+                </p>
+                <p>
+                  Temat<br />
+                  <input
+                    type="text"
+                    name="subject"
+                    id="subject"
+                    required
+                    placeholder="temat"
+                  />
+                </p>
+                <p>
+                  Wiadomość:<br />
+                  <textarea name="comment" form="usrform">
+treść wiadomości</textarea
+                  >
+                  <button class="messege">Wyślij</button>
+                </p>
+              </fieldset>
+            </div>
+            <div class="form-photo"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="p-4">
+      <div class="container-fluid">
+        <div class="footer">
+          <hr class="f" />
+          <p class="f mb-0">&copy; 2023 | Artur Molenda</p>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+      integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        startEvent: "DOMContentLoaded",
+        offset: 200,
+        once: true,
+      });
+    </script>
+    <script src="./script.js"></script>
+  </body>
 </html>

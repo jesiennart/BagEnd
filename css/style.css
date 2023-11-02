@@ -398,7 +398,8 @@ main {
   font-size: 1.5rem;
   text-transform: uppercase;
 }
-.contact .form-text input, .contact .form-text textarea {
+.contact .form-text input,
+.contact .form-text textarea {
   width: 100%;
   border-top-style: hidden;
   border-right-style: hidden;
@@ -444,75 +445,54 @@ main {
   color: rgb(195, 30, 1);
 }
 
-@media (min-width: 375px) {
+@media (max-width: 320px) {
   h1 {
     text-align: center;
-    font-size: 4rem;
-  }
-  .nav-logo {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: black;
-    border-radius: 0 0 5% 5%;
-  }
-  .nav-logo .navbar-br p {
-    padding-top: 2rem;
-    text-align: center;
     font-size: 3rem;
-    font-family: "Climate Crisis", monospace;
-    color: whitesmoke;
-    transition: 0.7s;
   }
-  .nav-logo .navbar-br:hover p {
-    color: rgb(250, 41, 4);
+  .navbar {
+    background-color: #333;
   }
-  .nav-logo .navbar-des p {
-    font-size: 1.4rem;
-    padding: 0 1rem;
+  .navbar .nav-logo .navbar-br {
+    padding-top: 60px;
     text-align: center;
-    font-family: "Climate Crisis", monospace;
-    color: whitesmoke;
-    transition: 0.7s;
+    font-size: 1.5rem;
   }
-  .nav-logo .navbar-des:hover p {
-    color: rgb(250, 41, 4);
+  .navbar .nav-logo .navbar-br:hover {
+    color: rgb(195, 30, 1);
   }
-  .home-img {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    border: 2px solid red;
-    background-image: url("../img/main-photo.jpg");
-    background-size: cover;
-    background-position: center;
-    z-index: 10;
+  .navbar .nav-logo .navbar-des p {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+  .navbar .nav-logo .navbar-des:hover {
+    color: rgb(195, 30, 1);
+  }
+  .navbar .navbar-toggler {
+    font-size: 26px;
+    left: 90%;
+    top: 10px;
+    margin-left: 5px;
   }
   .home-img .home-text {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-radius: 5rem;
-    padding: 1rem;
-    background-color: #333;
-    border: 1px solid wheat;
-    box-shadow: 0rem 0rem 1.5rem wheat;
+    width: 270px;
+    border-radius: 40px;
+    padding: 10px;
   }
   .home-img .home-text p {
-    padding: 1rem;
-    font-size: 2rem;
+    padding: 20px 10px;
+    font-size: 2.5rem;
     font-weight: bold;
-    line-height: 2rem;
+    line-height: 30px;
+    text-align: center;
     color: whitesmoke;
   }
-  .home-img .home-text a {
-    margin-top: 1.7rem;
+  .home-img .home-text a.btn {
+    margin-top: 0px;
     font-size: 2rem;
     font-weight: bold;
     color: whitesmoke;
@@ -521,54 +501,327 @@ main {
     background-color: none;
     transition: all 0.7s;
   }
-  .home-img .home-text a:hover {
-    color: rgb(250, 41, 4);
-    border: 3px solid rgb(250, 41, 4);
-  }
-  .home-img .fa-solid {
-    padding: 3rem;
-    font-size: 3rem;
-    color: whitesmoke;
-    transition: 0.7s;
-  }
-  .home-img .fa-solid:hover {
-    color: rgb(250, 41, 4);
-  }
-}
-@media (min-width: 768px) {
-  h1 {
-    font-size: 8rem;
-    font-weight: bold;
-    color: whitesmoke;
-  }
-  .home-img {
+  main {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    border: 2px solid red;
-    background-image: url("../img/main-photo.jpg");
-    background-size: cover;
-    background-position: center;
-    z-index: 10;
+    padding: 50px;
+  }
+  .card {
+    width: 20rem;
+  }
+  .card .team-shadow {
+    z-index: -5;
+  }
+  .card img {
+    position: absolute;
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transition: opacity 0.2s ease-out;
+  }
+  .card:hover h3 {
+    inset: auto auto 320px 60px;
+    border-radius: 10px;
+    transition: inset 0.3s ease-out;
+  }
+}
+@media (min-width: 321px) {
+  h1 {
+    text-align: center;
+    font-size: 3rem;
+  }
+  .navbar {
+    background-color: #333;
+  }
+  .navbar .nav-logo .navbar-br {
+    padding-top: 60px;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  .navbar .nav-logo .navbar-br:hover {
+    color: rgb(195, 30, 1);
+  }
+  .navbar .nav-logo .navbar-des p {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+  .navbar .nav-logo .navbar-des:hover {
+    color: rgb(195, 30, 1);
+  }
+  .navbar .navbar-toggler {
+    font-size: 26px;
+    left: 90%;
+    top: 10px;
+    margin-left: 5px;
   }
   .home-img .home-text {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-radius: 5rem;
-    padding: 1rem;
-    background-color: #333;
-    border: 1px solid wheat;
-    box-shadow: 0rem 0rem 1.5rem wheat;
+    width: 270px;
+    border-radius: 40px;
+    padding: 10px;
   }
   .home-img .home-text p {
-    padding: 1rem;
+    padding: 20px 10px;
+    font-size: 2.5rem;
+    font-weight: bold;
+    line-height: 30px;
+    text-align: center;
+    color: whitesmoke;
+  }
+  .home-img .home-text a.btn {
+    margin-top: 0px;
+    font-size: 2rem;
+    font-weight: bold;
+    color: whitesmoke;
+    border: 3px solid whitesmoke;
+    border-radius: 5rem;
+    background-color: none;
+    transition: all 0.7s;
+  }
+  main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+  }
+  .card {
+    width: 20rem;
+  }
+  .card .team-shadow {
+    z-index: -5;
+  }
+  .card img {
+    position: absolute;
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transition: opacity 0.2s ease-out;
+  }
+  .card:hover h3 {
+    inset: auto auto 320px 60px;
+    border-radius: 10px;
+    transition: inset 0.3s ease-out;
+  }
+}
+@media (min-width: 768px) {
+  h1 {
+    text-align: center;
+    font-size: 3.5rem;
+  }
+  .navbar {
+    background-color: #333;
+  }
+  .navbar .nav-logo .navbar-br {
+    padding-top: 60px;
+    text-align: center;
+    font-size: 2.5rem;
+  }
+  .navbar .nav-logo .navbar-br:hover {
+    color: rgb(195, 30, 1);
+  }
+  .navbar .nav-logo .navbar-des p {
+    font-size: 1.7rem;
+    text-align: center;
+  }
+  .navbar .nav-logo .navbar-des:hover {
+    color: rgb(195, 30, 1);
+  }
+  .navbar .navbar-toggler {
+    font-size: 36px;
+    left: 90%;
+    top: 10px;
+    margin-left: 5px;
+  }
+  .home-img .home-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 470px;
+    border-radius: 40px;
+    padding: 10px;
+  }
+  .home-img .home-text p {
+    padding: 20px 10px;
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 50px;
+    text-align: center;
+    color: whitesmoke;
+  }
+  .home-img .home-text a.btn {
+    margin-top: 0px;
+    font-size: 2rem;
+    font-weight: bold;
+    color: whitesmoke;
+    border: 3px solid whitesmoke;
+    border-radius: 5rem;
+    background-color: none;
+    transition: all 0.7s;
+  }
+  main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+  }
+  .card {
+    width: 25rem;
+  }
+}
+@media (min-width: 1024px) {
+  h1 {
+    text-align: center;
+    font-size: 4rem;
+  }
+  .navbar {
+    background-color: #333;
+  }
+  .navbar .nav-logo .navbar-br {
+    display: none;
+  }
+  .navbar .nav-logo .navbar-br:hover {
+    color: rgb(195, 30, 1);
+  }
+  .navbar .nav-logo .navbar-des p {
+    display: none;
+  }
+  .navbar .nav-logo .navbar-des:hover {
+    color: rgb(195, 30, 1);
+  }
+  .navbar .navbar-toggler {
+    font-size: 26px;
+    left: 90%;
+    top: 10px;
+    margin-left: 5px;
+  }
+  .home-img .home-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 370px;
+    border-radius: 40px;
+    padding: 10px;
+  }
+  .home-img .home-text p {
+    padding: 20px 10px;
+    font-size: 2.5rem;
+    font-weight: bold;
+    line-height: 50px;
+    text-align: center;
+    color: whitesmoke;
+  }
+  .home-img .home-text a.btn {
+    margin-top: 0px;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: whitesmoke;
+    border: 3px solid whitesmoke;
+    border-radius: 5rem;
+    background-color: none;
+    transition: all 0.7s;
+  }
+  main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+  }
+  .card {
+    width: 30rem;
+  }
+  .card .team-shadow {
+    z-index: -5;
+  }
+  .card img {
+    position: absolute;
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transition: opacity 0.2s ease-out;
+  }
+  .card:hover h3 {
+    inset: auto auto 320px 60px;
+    border-radius: 10px;
+    transition: inset 0.3s ease-out;
+  }
+}
+@media (min-width: 1200px) {
+  h1 {
+    text-align: center;
+    font-size: 6rem;
+  }
+  .home-img .home-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 570px;
+    border-radius: 40px;
+    padding: 10px;
+  }
+  .home-img .home-text p {
+    padding: 20px 10px;
     font-size: 4rem;
     font-weight: bold;
-    line-height: 2rem;
+    line-height: 60px;
+    text-align: center;
     color: whitesmoke;
+  }
+  .home-img .home-text a.btn {
+    margin-top: 0px;
+    font-size: 3rem;
+    font-weight: bold;
+    color: whitesmoke;
+    border: 3px solid whitesmoke;
+    border-radius: 5rem;
+    background-color: none;
+    transition: all 0.7s;
+  }
+  main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+  }
+  .card {
+    width: 20rem;
+  }
+  .card .team-shadow {
+    z-index: -5;
+  }
+  .card img {
+    position: absolute;
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transition: opacity 0.2s ease-out;
+  }
+  .card:hover h3 {
+    inset: auto auto 320px 60px;
+    border-radius: 10px;
+    transition: inset 0.3s ease-out;
   }
 }/*# sourceMappingURL=style.css.map */
