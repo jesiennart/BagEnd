@@ -141,6 +141,9 @@ nav {
     background-color: #333;
     border: 1px solid wheat;
     box-shadow: 0rem 0rem 1.5rem wheat;
+    .btn-welcome:hover {
+      background-color: rgb(195, 30, 1);
+    }
     p {
       padding: 1rem;
       font-size: 4rem;
@@ -362,9 +365,14 @@ main {
     font-weight: bold;
     .head-text p {
       font-size: 3rem;
-      text-align: left;
+      text-align: center;
       text-transform: uppercase;
       margin: 1rem;
+    }
+    input:focus {
+      border-bottom: 2px solid rgb(195, 30, 1);
+      background-color: #fff;
+      outline: none;
     }
     fieldset {
       text-align: left;
@@ -383,8 +391,9 @@ main {
       border-left-style: hidden;
       border-bottom-style: groove;
     }
-    textarea {
-      margin-top: 1rem;
+    textarea:focus {
+      border-bottom: 2px solid rgb(195, 30, 1);
+      outline: none;
     }
     .no-outline:focus {
       outline: none;
@@ -397,6 +406,10 @@ main {
       border: none;
       background-color: rgb(195, 30, 1);
       color: whitesmoke;
+      transition: all 0.5s;
+    }
+    .messege:hover {
+      background-color: rgb(147, 23, 1);
     }
   }
   .form-photo {

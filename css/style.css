@@ -188,6 +188,9 @@ nav {
   border: 1px solid wheat;
   box-shadow: 0rem 0rem 1.5rem wheat;
 }
+.home-img .home-text .btn-welcome:hover {
+  background-color: rgb(195, 30, 1);
+}
 .home-img .home-text p {
   padding: 1rem;
   font-size: 4rem;
@@ -385,9 +388,14 @@ main {
 }
 .contact .form-text .head-text p {
   font-size: 3rem;
-  text-align: left;
+  text-align: center;
   text-transform: uppercase;
   margin: 1rem;
+}
+.contact .form-text input:focus {
+  border-bottom: 2px solid rgb(195, 30, 1);
+  background-color: #fff;
+  outline: none;
 }
 .contact .form-text fieldset {
   text-align: left;
@@ -406,8 +414,9 @@ main {
   border-left-style: hidden;
   border-bottom-style: groove;
 }
-.contact .form-text textarea {
-  margin-top: 1rem;
+.contact .form-text textarea:focus {
+  border-bottom: 2px solid rgb(195, 30, 1);
+  outline: none;
 }
 .contact .form-text .no-outline:focus {
   outline: none;
@@ -420,6 +429,10 @@ main {
   border: none;
   background-color: rgb(195, 30, 1);
   color: whitesmoke;
+  transition: all 0.5s;
+}
+.contact .form-text .messege:hover {
+  background-color: rgb(147, 23, 1);
 }
 .contact .form-photo {
   width: 60vw;
