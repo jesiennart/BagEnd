@@ -44,9 +44,6 @@
             <div class="navbar-br">
               <p>Bag End</p>
             </div>
-            <div class="navbar-des">
-              <p>English School</p>
-            </div>
           </a>
         </div>
         <button
@@ -85,18 +82,25 @@
         <div class="dots-6"></div>
         <div class="home-shadow"></div>
         <div class="home-text">
-          <h1>
-            Dołącz do <span class="underlined underline-clip3">nas!</span>
-          </h1>
-          <p>
-            Uczymy łatwo,
-            <span class="underlined underline-clip">szybko</span> i skutecznie :
-          </p>
-          <a href="#about" class="btn btn-welcome">Zapraszamy</a>
-        </div>
-        <a href="#about"
-          ><i class="fa-sharp fa-solid fa-chevron-down bounce-top"></i
-        ></a>
+          <div class="layer">
+            <div class="home-picture">
+            </div>
+            <div class="title">
+              <h1>BagEnd</h1>
+              <p>English School</p>
+            </div>
+            <div class="home-des">
+              <h3>
+                Dołącz do nas!
+              </h3>
+              <p>
+                Uczymy łatwo, szybko i skutecznie!
+              </p>
+              <a href="#about"
+              ><i class="fa-sharp fa-solid fa-chevron-down bounce-top"></i
+                      ></a>
+            </div>
+          </div>
       </div>
     </header>
 
@@ -297,7 +301,7 @@
     </section>
 
     <section>
-      <div id="contact" class="contact py-5">
+      <div id="contact" class="contact">
         <div class="container">
           <div class="contact-0">
             <h2 class="logo-contact">kontakt:</h2>
@@ -311,9 +315,9 @@
               </div>
               <div class="part-two">
                 <div class="content">
-                  <h3>Monika Molenda</h3>
-                  <p>ul. pokoju 74a/4</p>
-                  <p>71-740 szczecin</p>
+                  <h3>Anna Kolarska</h3>
+                  <p>ul. Mariacka 79c/15</p>
+                  <p>70-543 Olsztyn</p>
                 </div>
               </div>
             </div>
@@ -339,7 +343,7 @@
               <div class="part-two">
                 <div class="content">
                   <h3>Email:</h3>
-                  <p>henoh@poczta.onet.pl</p>
+                  <p>annkol@gmail.com</p>
                 </div>
               </div>
             </div>
@@ -352,56 +356,55 @@
               <div class="part-two">
                 <div class="content">
                   <h3>Facebook:</h3>
-                  <p>facebook/monikamolenda</p>
+                  <p>facebook/annkol</p>
                 </div>
               </div>
             </div>
           </div>
           <div class="form">
             <div class="form-text">
+              <div class="popup">
+                <p>Wiadomość została wysłana poprawnie.</p>
+              </div>
               <div class="head-text">
                 <p>Napisz do nas:</p>
               </div>
-              <fieldset>
-                <p>
-                  Imię i Nazwisko:<br />
-                  <input
-                    minlength="5"
-                    maxlength="30"
-                    type=" text"
-                    name="user name"
-                    id="username"
-                    required
-                    required
-                    placeholder=""
-                  />
-                </p>
-                <p>
-                  Email:<br />
-                  <input
-                    type="email"
-                    name="email"
-                    id="email"
-                    required
-                    placeholder=""
-                  />
-                </p>
-                <p>
-                  Temat<br />
-                  <input
-                    type="text"
-                    name="subject"
-                    id="subject"
-                    required
-                    placeholder=""
-                  />
-                </p>
-                <p>
-                  Wiadomość:<br />
-                  <textarea name="comment" form="usrform"> </textarea>
-                  <button class="messege">Wyślij</button>
-                </p>
-              </fieldset>
+              <div class="form-box">
+                <label for="username">Nazwisko i Imię</label>
+                <input
+                  minlength="5"
+                  maxlength="30"
+                  type=" text"
+                  name="username"
+                  id="username"
+                  placeholder=""
+                  autocomplete="off"
+                />
+                <p class="error-text">error</p>
+              </div>
+              <div class="form-box">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder=""
+                  autocomplete="off"
+                />
+                <p class="error-text">error</p>
+              </div>
+              <div class="form-box">
+                <label for="subject">Temat</label>
+                <input type="text" name="subject" id="subject" placeholder="" />
+                <p class="error-text">error</p>
+              </div>
+              <div class="form-box">
+                <label for="text-message">Wiadomość</label>
+                <textarea name="comment" form="usrform" id="text-message">
+                </textarea>
+                <p class="textarea"></p>
+                <button class="message">Wyślij</button>
+              </div>
             </div>
             <div class="form-photo"></div>
           </div>
@@ -412,7 +415,7 @@
       <div class="container-fluid">
         <div class="footer">
           <hr class="f" />
-          <p class="f mb-0">&copy; 2023 | Artur Molenda</p>
+          <p class="f mb-0"></p>
         </div>
       </div>
     </footer>

@@ -17,15 +17,23 @@ body {
   font-family: "Lato", monospace;
 }
 h1 {
-  font-size: 8rem;
-  font-weight: bold;
-  color: whitesmoke;
+  font-size: 10rem;
+  font-weight: bolder;
+  background: #ff0000;
+  background: radial-gradient(
+    circle farthest-corner at center center,
+    #ff0000 0%,
+    #000000 100%
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 h2 {
   margin: 0 auto;
   text-align: center;
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: bold;
+  color: black;
 }
 .container {
   padding: 0;
@@ -36,38 +44,30 @@ h2 {
 
 //nawigacja
 nav {
-  z-index: 1;
+  z-index: 12;
 }
 .navbar {
   background-color: #333;
   .nav-logo {
     position: absolute;
     left: 50%;
+    top: -55px;
     transform: translateX(-50%);
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #333;
-    border-radius: 0 0 5% 5%;
     .navbar-br {
-      padding-top: 6rem;
       text-align: center;
-      font-size: 3.5rem;
       font-family: "Climate Crisis", monospace;
       color: whitesmoke;
       transition: 0.7s;
+      p {
+        font-size: 2rem;
+        margin: 0;
+      }
     }
     .navbar-br:hover {
-      color: rgb(195, 30, 1);
-    }
-    .navbar-des p {
-      font-size: 2rem;
-      padding: 0 1rem;
-      font-family: "Climate Crisis", monospace;
-      color: whitesmoke;
-      transition: 0.7s;
-    }
-    .navbar-des:hover {
       color: rgb(195, 30, 1);
     }
   }
@@ -122,58 +122,85 @@ nav {
 //header
 
 .home-img {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  position: relative;
   height: 100vh;
-  background-image: url("../img/main-photo.jpg");
-  background-size: cover;
-  background-position: center;
+  background-color: #fff;
   z-index: 10;
   .home-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     border-radius: 5rem;
     padding: 1rem;
-    background-color: #333;
-    border: 1px solid wheat;
-    box-shadow: 0rem 0rem 1.5rem wheat;
-    .btn-welcome:hover {
-      background-color: rgb(195, 30, 1);
+
+    .home-picture {
+      position: absolute;
+      width: 90vw;
+      min-width: 300px;
+      height: 450px;
+      padding: 40px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: black;
+      border-radius: 45px;
+      background-image: url("../img/main-photo.jpg");
+      background-size: cover;
+      background-position: center;
     }
-    p {
+    .title {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: center;
+      overflow: hidden;
+      width: 40vw;
+      min-height: 20vh;
+      top: 10%;
+      left: 10%;
+      color: black;
+      border-radius: 0px 0px 45px 45px;
+      background-color: white;
+      p {
+        font-size: 3vw;
+        color: rgb(195, 30, 1);
+        font-weight: bold;
+        text-align: center;
+      }
+    }
+    .home-des {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      width: 30vw;
+      min-height: 30vh;
+      top: 55%;
+      right: 10%;
       padding: 1rem;
-      font-size: 4rem;
-      font-weight: bold;
-      line-height: 2rem;
-      color: whitesmoke;
+      color: black;
+      border-radius: 45px 45px 0px 0px;
+      background-color: white;
+      h3 {
+        font-size: 4vw;
+        font-weight: bold;
+        text-align: center;
+      }
+      p {
+        font-size: 2.7vw;
+        font-weight: bolder;
+        text-align: center;
+      }
+      .fa-sharp {
+        text-align: center;
+        font-size: 4rem;
+        color: rgb(195, 30, 1);
+        transition: all 0.5s;
+      }
+      .fa-sharp:hover {
+        font-size: 6rem;
+      }
     }
-    a {
-      margin-top: 1.7rem;
-      font-size: 2rem;
-      font-weight: bold;
-      color: whitesmoke;
-      border: 3px solid whitesmoke;
-      border-radius: 5rem;
-      background-color: none;
-      transition: all 0.7s;
-    }
-    a:hover {
-      color: rgb(195, 30, 1);
-      border: 3px solid rgb(195, 30, 1);
-    }
-  }
-  .fa-solid {
-    padding: 3rem;
-    font-size: 3rem;
-    color: whitesmoke;
-    transition: 0.7s;
-  }
-  .fa-solid:hover {
-    color: rgb(195, 30, 1);
   }
 }
 // about
@@ -333,7 +360,6 @@ main {
     justify-content: space-around;
     align-items: start;
     flex-wrap: wrap;
-    margin-top: 3rem;
   }
   .part-one {
     font-size: 7rem;
@@ -360,9 +386,11 @@ main {
     align-items: center;
   }
   .form-text {
+    position: relative;
     width: 100%;
     height: 100%;
     font-weight: bold;
+    padding: 1rem;
     .head-text p {
       font-size: 3rem;
       text-align: center;
@@ -374,11 +402,10 @@ main {
       background-color: #fff;
       outline: none;
     }
-    fieldset {
+    form-box {
       text-align: left;
-      margin: 2rem;
     }
-    p {
+    Label {
       margin: 1rem;
       font-size: 1.5rem;
       text-transform: uppercase;
@@ -390,6 +417,7 @@ main {
       border-right-style: hidden;
       border-left-style: hidden;
       border-bottom-style: groove;
+      font-size: 1.5rem;
     }
     textarea:focus {
       border-bottom: 2px solid rgb(195, 30, 1);
@@ -398,28 +426,69 @@ main {
     .no-outline:focus {
       outline: none;
     }
-    .messege {
+    .message {
       padding: 1rem 2rem;
       margin: 1rem;
       border-radius: 1rem;
+      font-size: 1.5rem;
       font-weight: bold;
       border: none;
       background-color: rgb(195, 30, 1);
       color: whitesmoke;
       transition: all 0.5s;
     }
-    .messege:hover {
+    .message:hover {
       background-color: rgb(147, 23, 1);
+    }
+    .error-text,
+    .textarea {
+      display: none;
+      text-align: center;
+      font-size: 1.3rem;
+      text-transform: lowercase;
+      color: red;
+    }
+    .form-box.error .error-text {
+      display: block;
     }
   }
   .form-photo {
     width: 60vw;
-    height: 450px;
+    min-height: 470px;
     background-image: url("../img/teacher.jpg");
     background-size: cover;
     background-position: left;
   }
+  .popup {
+    scale: 0;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 200px;
+    height: 150px;
+    background-color: rgb(195, 30, 1);
+    padding: 1rem;
+    border: 2px solid #333;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 2rem;
+    p {
+      text-align: center;
+      font-size: 2rem;
+      color: #fff;
+    }
+  }
+  .show-popup {
+    scale: 1;
+    transition: 0.5s;
+  }
 }
+
+// footer
 .footer {
   color: black;
   text-align: center;
@@ -451,13 +520,6 @@ main {
       .navbar-br:hover {
         color: rgb(195, 30, 1);
       }
-      .navbar-des p {
-        font-size: 1.3rem;
-        text-align: center;
-      }
-      .navbar-des:hover {
-        color: rgb(195, 30, 1);
-      }
     }
     .navbar-toggler {
       font-size: 26px;
@@ -467,63 +529,36 @@ main {
     }
   }
   .home-img {
-    .home-text {
+    main {
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
       justify-content: center;
       align-items: center;
-      width: 270px;
-      border-radius: 40px;
-      padding: 10px;
-      p {
-        padding: 20px 10px;
-        font-size: 2.5rem;
-        font-weight: bold;
-        line-height: 30px;
-        text-align: center;
-        color: whitesmoke;
+      padding: 50px;
+    }
+
+    .card {
+      width: 20rem;
+
+      .team-shadow {
+        z-index: -5;
       }
-      a.btn {
-        margin-top: 0px;
-        font-size: 2rem;
-        font-weight: bold;
-        color: whitesmoke;
-        border: 3px solid whitesmoke;
-        border-radius: 5rem;
-        background-color: none;
-        transition: all 0.7s;
+
+      img {
+        position: absolute;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        transition: opacity 0.2s ease-out;
       }
-    }
-  }
-  main {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 50px;
-  }
 
-  .card {
-    width: 20rem;
-
-    .team-shadow {
-      z-index: -5;
-    }
-
-    img {
-      position: absolute;
-      object-fit: cover;
-      width: 100%;
-      height: 100%;
-      top: 0;
-      left: 0;
-      transition: opacity 0.2s ease-out;
-    }
-
-    &:hover h3 {
-      inset: auto auto 320px 60px;
-      border-radius: 10px;
-      transition: inset 0.3s ease-out;
+      &:hover h3 {
+        inset: auto auto 320px 60px;
+        border-radius: 10px;
+        transition: inset 0.3s ease-out;
+      }
     }
   }
 }
@@ -543,13 +578,6 @@ main {
       .navbar-br:hover {
         color: rgb(195, 30, 1);
       }
-      .navbar-des p {
-        font-size: 1.3rem;
-        text-align: center;
-      }
-      .navbar-des:hover {
-        color: rgb(195, 30, 1);
-      }
     }
     .navbar-toggler {
       font-size: 26px;
@@ -559,63 +587,36 @@ main {
     }
   }
   .home-img {
-    .home-text {
+    main {
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
       justify-content: center;
       align-items: center;
-      width: 270px;
-      border-radius: 40px;
-      padding: 10px;
-      p {
-        padding: 20px 10px;
-        font-size: 2.5rem;
-        font-weight: bold;
-        line-height: 30px;
-        text-align: center;
-        color: whitesmoke;
+      padding: 50px;
+    }
+
+    .card {
+      width: 20rem;
+
+      .team-shadow {
+        z-index: -5;
       }
-      a.btn {
-        margin-top: 0px;
-        font-size: 2rem;
-        font-weight: bold;
-        color: whitesmoke;
-        border: 3px solid whitesmoke;
-        border-radius: 5rem;
-        background-color: none;
-        transition: all 0.7s;
+
+      img {
+        position: absolute;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        transition: opacity 0.2s ease-out;
       }
-    }
-  }
-  main {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 50px;
-  }
 
-  .card {
-    width: 20rem;
-
-    .team-shadow {
-      z-index: -5;
-    }
-
-    img {
-      position: absolute;
-      object-fit: cover;
-      width: 100%;
-      height: 100%;
-      top: 0;
-      left: 0;
-      transition: opacity 0.2s ease-out;
-    }
-
-    &:hover h3 {
-      inset: auto auto 320px 60px;
-      border-radius: 10px;
-      transition: inset 0.3s ease-out;
+      &:hover h3 {
+        inset: auto auto 320px 60px;
+        border-radius: 10px;
+        transition: inset 0.3s ease-out;
+      }
     }
   }
 }
@@ -635,13 +636,6 @@ main {
       .navbar-br:hover {
         color: rgb(195, 30, 1);
       }
-      .navbar-des p {
-        font-size: 1.7rem;
-        text-align: center;
-      }
-      .navbar-des:hover {
-        color: rgb(195, 30, 1);
-      }
     }
     .navbar-toggler {
       font-size: 36px;
@@ -650,35 +644,8 @@ main {
       margin-left: 5px;
     }
   }
-  .home-img {
-    .home-text {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      width: 470px;
-      border-radius: 40px;
-      padding: 10px;
-      p {
-        padding: 20px 10px;
-        font-size: 3rem;
-        font-weight: bold;
-        line-height: 50px;
-        text-align: center;
-        color: whitesmoke;
-      }
-      a.btn {
-        margin-top: 0px;
-        font-size: 2rem;
-        font-weight: bold;
-        color: whitesmoke;
-        border: 3px solid whitesmoke;
-        border-radius: 5rem;
-        background-color: none;
-        transition: all 0.7s;
-      }
-    }
-  }
+}
+.home-img {
   main {
     display: flex;
     flex-direction: row;
@@ -706,12 +673,6 @@ main {
       .navbar-br:hover {
         color: rgb(195, 30, 1);
       }
-      .navbar-des p {
-        display: none;
-      }
-      .navbar-des:hover {
-        color: rgb(195, 30, 1);
-      }
     }
     .navbar-toggler {
       font-size: 26px;
@@ -721,109 +682,53 @@ main {
     }
   }
   .home-img {
-    .home-text {
+    main {
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
       justify-content: center;
       align-items: center;
-      width: 370px;
-      border-radius: 40px;
-      padding: 10px;
-      p {
-        padding: 20px 10px;
-        font-size: 2.5rem;
-        font-weight: bold;
-        line-height: 50px;
-        text-align: center;
-        color: whitesmoke;
+      padding: 50px;
+    }
+
+    .card {
+      width: 30rem;
+
+      .team-shadow {
+        z-index: -5;
       }
-      a.btn {
-        margin-top: 0px;
-        font-size: 2.5rem;
-        font-weight: bold;
-        color: whitesmoke;
-        border: 3px solid whitesmoke;
-        border-radius: 5rem;
-        background-color: none;
-        transition: all 0.7s;
+
+      img {
+        position: absolute;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        transition: opacity 0.2s ease-out;
       }
-    }
-  }
-  main {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 50px;
-  }
 
-  .card {
-    width: 30rem;
-
-    .team-shadow {
-      z-index: -5;
-    }
-
-    img {
-      position: absolute;
-      object-fit: cover;
-      width: 100%;
-      height: 100%;
-      top: 0;
-      left: 0;
-      transition: opacity 0.2s ease-out;
-    }
-
-    &:hover h3 {
-      inset: auto auto 320px 60px;
-      border-radius: 10px;
-      transition: inset 0.3s ease-out;
+      &:hover h3 {
+        inset: auto auto 320px 60px;
+        border-radius: 10px;
+        transition: inset 0.3s ease-out;
+      }
     }
   }
 }
-
 @media (min-width: 1200px) {
   h1 {
     text-align: center;
     font-size: 6rem;
   }
   .home-img {
-    .home-text {
+    main {
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
       justify-content: center;
       align-items: center;
-      width: 570px;
-      border-radius: 40px;
-      padding: 10px;
-      p {
-        padding: 20px 10px;
-        font-size: 4rem;
-        font-weight: bold;
-        line-height: 60px;
-        text-align: center;
-        color: whitesmoke;
-      }
-      a.btn {
-        margin-top: 0px;
-        font-size: 3rem;
-        font-weight: bold;
-        color: whitesmoke;
-        border: 3px solid whitesmoke;
-        border-radius: 5rem;
-        background-color: none;
-        transition: all 0.7s;
-      }
+      padding: 50px;
     }
   }
-  main {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 50px;
-  }
-
   .card {
     width: 20rem;
 
