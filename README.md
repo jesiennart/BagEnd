@@ -18,10 +18,10 @@ https://github.com/jesiennart/BagEnd.git
 ```
 ## Technologies Used
 
-<img src="./Img/image.png" width="50" height="50">
-<img src="./Img/css-3.png" width="50" height="50">
-<img src="./Img/js.png" width="50" height="50">
-<img src="./Img/bootstrap.png" width="50" height="50">
+<img src="./img/image.png" width="50" height="50">
+<img src="./img/css-3.png" width="50" height="50">
+<img src="./img/js.png" width="50" height="50">
+<img src="./img/bootstrap.png" width="50" height="50">
 
 ## Features
 
@@ -33,7 +33,7 @@ https://github.com/jesiennart/BagEnd.git
 
 ## Screenshots
 
-<img src="./Img/bg-hero.png" alt="picture of app">
+<img src="./img/bg-hero.png" alt="picture of app">
 
 ## Project Status
 
@@ -42,7 +42,7 @@ In progress.
 ## Room for Improvement
 
 <ul>
-<li>I think a form to booking lessons</Li>
+<li>I think about form to booking lessons</Li>
 </ul>
 
 ## Acknowledgements
@@ -58,3 +58,4 @@ This project was inspired by my wife who is english teacher. She needs simple an
 ## Contact
 
 Email: artmol@op.pl
+
