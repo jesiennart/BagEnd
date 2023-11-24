@@ -6,7 +6,7 @@ const sendBtn = document.querySelector(".message");
 const errorText = document.querySelector(".error-text");
 const popup = document.querySelector(".popup");
 const textarea = document.querySelector(".textarea");
-const copy = document.querySelector('.mb-0')
+const copy = document.querySelector(".mb-0");
 
 const showError = (input, msg) => {
   const formBox = input.parentElement;
@@ -30,7 +30,7 @@ const checkForm = (input) => {
 
 const checkLength = (input, min) => {
   const form = input.previousElementSibling.innerText;
-  if (input.value.length < min) {
+  if (input.value.trim().length < min) {
     showError(input, `${form} musi mieć minimum ${min} znaki`);
   } else {
     clearError(username);
@@ -38,7 +38,7 @@ const checkLength = (input, min) => {
 };
 const checkSubject = (input, min) => {
   const form = input.previousElementSibling.innerText;
-  if (input.value.length < min) {
+  if (input.value.trim().length < min) {
     showError(input, `${form} musi mieć minimum ${min} znaki`);
   } else {
     clearError(subject);
@@ -46,7 +46,7 @@ const checkSubject = (input, min) => {
 };
 
 const checkMessage = () => {
-  if (message.value < 5) {
+  if (message.value.trim().length < 5) {
     textarea.style.display = "block";
     textarea.textContent = "Wpisz treść wiadomości";
   } else {
@@ -69,22 +69,24 @@ const checkErrors = () => {
   let errorCount = 0;
 
   allInput.forEach((element) => {
-    if (element.classList.contains("error") || textarea.style.display === "block") {
+    if (
+      element.classList.contains("error") ||
+      textarea.style.display === "block"
+    ) {
       errorCount++;
-    } 
-  })
+    }
+  });
   if (errorCount === 0) {
-      
     popup.classList.add("show-popup");
-    let arr = [username, subject, email, message]
-    arr.forEach(el => {
-      el.value = ''
+    let arr = [username, subject, email, message];
+    arr.forEach((el) => {
+      el.value = "";
     });
-  
-  setTimeout(() => {
-    popup.classList.remove("show-popup");
-  }, 2000);
-};
+
+    setTimeout(() => {
+      popup.classList.remove("show-popup");
+    }, 2000);
+  }
 };
 
 sendBtn.addEventListener("click", (e) => {
@@ -98,11 +100,10 @@ sendBtn.addEventListener("click", (e) => {
   checkErrors();
 });
 
-
-let date = new Date().getFullYear()
-const copyright = '&#169'
+let date = new Date().getFullYear();
+const copyright = "&#169";
 
 const setDate = () => {
-  copy.innerHTML = `${copyright} ${date} | Artur Molenda`
-}
-setDate()
+  copy.innerHTML = `${copyright} ${date} | Artur Molenda`;
+};
+setDate();

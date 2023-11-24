@@ -1,4 +1,4 @@
-@import "_animations";
+@import '_animations';
 
 *,
 *::before,
@@ -17,7 +17,7 @@ body {
   font-family: "Lato", monospace;
 }
 h1 {
-  font-size: 10rem;
+  font-size: 8vw;
   font-weight: bolder;
   background: #ff0000;
   background: radial-gradient(
@@ -36,10 +36,7 @@ h2 {
   color: black;
 }
 .container {
-  padding: 0;
-}
-.shadow-bg {
-  background-color: black;
+  padding: 0.5rem;
 }
 
 //nawigacja
@@ -56,7 +53,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #333;
+    background-color: transparent;
     .navbar-br {
       text-align: center;
       font-family: "Climate Crisis", monospace;
@@ -157,10 +154,10 @@ nav {
       top: 10%;
       left: 10%;
       border-radius: 0px 0px 45px 45px;
-      background-color: red;
+      background-color: white;
       p {
         font-size: 3vw;
-        color: rgb(195, 30, 1);
+        color: darkblue;
         font-weight: bold;
         text-align: center;
       }
@@ -169,24 +166,25 @@ nav {
       position: absolute;
       display: flex;
       flex-direction: column;
-      justify-content: center;
+      justify-content: flex-start;
       align-items: center;
       overflow: hidden;
       width: 30vw;
       min-height: 30vh;
-      top: 55%;
+      top: 58%;
       right: 10%;
       padding: 1rem;
       color: black;
       border-radius: 45px 45px 0px 0px;
       background-color: white;
       h3 {
-        font-size: 3.5vw;
+        margin-top: 0.7rem;
+        font-size: 3.8vw;
         font-weight: bold;
         text-align: center;
       }
       p {
-        font-size: 2.3vw;
+        font-size: 2.6vw;
         font-weight: bolder;
         text-align: center;
       }
@@ -194,6 +192,7 @@ nav {
       .fa-sharp {
         text-align: center;
         font-size: 4rem;
+        padding: 1rem;
         color: rgb(195, 30, 1);
         transition: all 0.5s;
       }
@@ -201,15 +200,6 @@ nav {
         font-size: 6rem;
       }
     }
-    .home-logo {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      width: 500px;
-      height: 500px;
-      color: black;
-      border: 5px solid black;
-      }
   }
 }
 // about
@@ -219,9 +209,7 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  //border: 1px solid black;
   .name {
-    //border: 1px solid black;
     .about-name {
       text-align: center;
       font-size: 5rem;
@@ -236,19 +224,22 @@ nav {
     }
   }
   .about-photo {
-    //border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     img {
-      width: 100%;
-      height: 100%;
-      border-right: 10px solid wheat;
-      border-left: 10px solid wheat;
+        width: 40vw;
+        min-width: 300px;
+        height: 450px;
+      border-right: 10px solid gold;
+      border-left: 10px solid gold;
       border-radius: 50% 0;
-      margin: 0;
+      margin-left: 1rem;
       transition: all 0.7s;
     }
     img:hover {
-      border-bottom: 10px solid wheat;
-      border-top: 10px solid wheat;
+      border-bottom: 10px solid gold;
+      border-top: 10px solid gold;
       scale: 1.1;
     }
     .photo {
@@ -401,10 +392,11 @@ main {
     font-weight: bold;
     padding: 1rem;
     .head-text p {
+      margin: 1rem;
       font-size: 3rem;
       text-align: center;
       text-transform: uppercase;
-      margin: 1rem;
+      color: gold;
     }
     input:focus {
       border-bottom: 2px solid rgb(195, 30, 1);
@@ -518,8 +510,11 @@ main {
     text-align: center;
     font-size: 3rem;
   }
+  h3 {
+    font-size: 10px;
+  }
   .navbar {
-    background-color: #333;
+    background-color: rgba(71, 71, 71, 0.95);
     .nav-logo {
       .navbar-br {
         padding-top: 60px;
@@ -537,6 +532,7 @@ main {
       margin-left: 5px;
     }
   }
+  
   .home-img {
     main {
       display: flex;
@@ -545,7 +541,9 @@ main {
       align-items: center;
       padding: 50px;
     }
-
+    h3 {
+      font-size: 10px;
+    }
     .card {
       width: 20rem;
 
@@ -577,7 +575,7 @@ main {
     font-size: 3rem;
   }
   .navbar {
-    background-color: #333;
+    background-color: rgba(71, 71, 71, 0.95);
     .nav-logo {
       .navbar-br {
         padding-top: 60px;
@@ -603,7 +601,11 @@ main {
       align-items: center;
       padding: 50px;
     }
-
+    .about-photo {
+        padding: 5rem;
+    }
+    
+    
     .card {
       width: 20rem;
 
@@ -762,3 +764,4 @@ main {
     }
   }
 }
+

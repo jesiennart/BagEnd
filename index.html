@@ -71,7 +71,6 @@
             ></a>
             <a class="nav-link tabs"><i class="fa-brands fa-facebook"></i></a>
             <a class="nav-link tabs"><i class="fa-brands fa-instagram"></i></a>
-            <a class="nav-link tabs"><i class="fa-solid fa-at"></i></a>
           </div>
         </div>
       </div>
@@ -83,9 +82,7 @@
         <div class="home-shadow"></div>
         <div class="home-text">
           <div class="layer">
-            <div class="home-picture">
-            </div>
-            <div class="home-logo">BBBBBBBB</div>
+            <div class="home-picture"></div>
             <div class="title">
               <h1>BagEnd</h1>
               <p>English School</p>
@@ -95,13 +92,16 @@
                 Dołącz do <span class="underlined underline-clip3">nas!</span>
               </h3>
               <p>
-                Uczymy <span class="underlined underline-clip">łatwo,</span> szybko i <span class="underlined underline-clip2">skutecznie!</span>
+                Uczymy
+                <span class="underlined underline-clip">łatwo,</span> szybko i
+                <span class="underlined underline-clip2">skutecznie!</span>
               </p>
               <a href="#about"
-              ><i class="fa-sharp fa-solid fa-chevron-down bounce-top"></i
-                      ></a>
+                ><i class="fa-sharp fa-solid fa-chevron-down bounce-top"></i
+              ></a>
             </div>
           </div>
+        </div>
       </div>
     </header>
 
@@ -125,7 +125,7 @@
               </div>
             </div>
             <div class="about-photo">
-              <img class="photo" src="./img/teacher2.jpg" alt="" />
+              <img class="photo" src="./img/teacher2.jpg" alt="my-photo" />
             </div>
           </div>
         </div>
@@ -169,7 +169,7 @@
               <p><i class="fa-solid fa-user-graduate"></i></p>
               <p class="about-us-card-title mb-1">Maturzyści</p>
               <p class="about-us-card-text">
-                przygotowywujemy do egzaminu maturalnego
+                Przygotowywujemy do egzaminu maturalnego
               </p>
             </div>
             <div
@@ -180,7 +180,7 @@
               <p><i class="fa-solid fa-user"></i></p>
               <p class="about-us-card-title mb-1">Praca z dorosłymi</p>
               <p class="about-us-card-text">
-                uczymy do pracy zawodowej jak i hobby
+                Uczymy do pracy zawodowej jak i hobby
               </p>
             </div>
             <div
@@ -191,7 +191,7 @@
               <p><i class="fa-solid fa-children"></i></p>
               <p class="about-us-card-title mb-1">praca z dziećmi</p>
               <p class="about-us-card-text">
-                mamy specjalnie dostosowany program do najmłodszych kursantów
+                Mamy specjalnie dostosowany program do najmłodszych kursantów
               </p>
             </div>
             <div
@@ -250,7 +250,7 @@
           <main class="row row-cols-1 row-cols-md-2 row-cols-xl-4">
             <div class="card-one">
               <div class="card">
-                <img src="./img/class.jpg" alt="" />
+                <img src="./img/class.jpg" alt="classroom" />
                 <div class="text">
                   <h3>W klasie</h3>
                   <p>
@@ -262,7 +262,7 @@
             </div>
             <div class="card-two">
               <div class="card">
-                <img src="./img/home.jpg" alt="" />
+                <img src="./img/home.jpg" alt="home office" />
                 <div class="text">
                   <h3>Online</h3>
                   <p>
@@ -274,7 +274,7 @@
             </div>
             <div class="card-thre">
               <div class="card">
-                <img src="./img/man.jpg" alt="" />
+                <img src="./img/man.jpg" alt="young man" />
                 <div class="text">
                   <h3>Indywidualnie</h3>
                   <p>
@@ -286,7 +286,7 @@
             </div>
             <div class="card-four">
               <div class="card">
-                <img src="./img/group.jpg" alt="" />
+                <img src="./img/group.jpg" alt="group of people" />
                 <div class="text">
                   <h3>W grupach</h3>
                   <p>
@@ -380,6 +380,7 @@
                   id="username"
                   placeholder=""
                   autocomplete="off"
+                  onkeypress="CheckSpace(event)"
                 />
                 <p class="error-text">error</p>
               </div>
