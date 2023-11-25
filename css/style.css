@@ -594,6 +594,9 @@ main {
     border-radius: 10px;
     transition: inset 0.3s ease-out;
   }
+  .form-photo {
+    display: none;
+  }
 }
 @media (min-width: 321px) {
   h1 {
@@ -645,6 +648,9 @@ main {
     border-radius: 10px;
     transition: inset 0.3s ease-out;
   }
+  .form-photo {
+    display: none;
+  }
 }
 @media (min-width: 768px) {
   h1 {
@@ -675,6 +681,10 @@ main {
   justify-content: center;
   align-items: center;
   padding: 50px;
+}
+
+.form-photo {
+  display: block;
 }
 
 @media (min-width: 1024px) {
@@ -721,6 +731,9 @@ main {
     inset: auto auto 320px 60px;
     border-radius: 10px;
     transition: inset 0.3s ease-out;
+  }
+  .form-photo {
+    display: block;
   }
 }
 @media (min-width: 1200px) {
