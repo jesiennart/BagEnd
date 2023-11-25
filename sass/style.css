@@ -594,9 +594,9 @@ main {
     border-radius: 10px;
     transition: inset 0.3s ease-out;
   }
-}
-.form-photo {
-  display: none;
+  .form-photo {
+    display: none;
+  }
 }
 @media (min-width: 321px) {
   h1 {
@@ -648,9 +648,9 @@ main {
     border-radius: 10px;
     transition: inset 0.3s ease-out;
   }
-}
-.form-photo {
-  display: none;
+  .form-photo {
+    display: none;
+  }
 }
 @media (min-width: 768px) {
   h1 {
